@@ -5,8 +5,9 @@ const Layout = styled.div`
     width: 100vw;
     background: ${props => props.theme.colors.background};
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
 `
 
 export default Layout

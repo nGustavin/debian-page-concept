@@ -5,6 +5,7 @@ import theme from './styles/theme'
 import GlobalStyle from './styles/globalstyle'
 import Layout from './styles/layout';
 import Header from './components/Header';
+import OperationalSystem from './sections/OperationalSystem';
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
       <GlobalStyle/>
       <Layout>
         <Header/>
+        
+        <OperationalSystem/>
       </Layout>
     </ThemeProvider>
   );

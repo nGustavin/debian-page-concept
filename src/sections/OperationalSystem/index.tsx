@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+import Title from '../../components/Titles';
 
 import { Container } from './styles';
 
@@ -9,7 +10,7 @@ interface OperationalSystemProps {
 function OperationalSystem({ children }: OperationalSystemProps) {
   return (
     <Container>
-      <h1>OperationalSystem</h1>
+      <Title title="The Operational System" description="Debian is free and complete!" />
       {children}
     </Container>
   );
