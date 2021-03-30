@@ -26,6 +26,16 @@ export const Buttons = styled.div`
     justify-content: space-between;
     gap: 30px;
 
+    @media only screen and (max-width: 768px){
+        width: 100%;
+        justify-content: center;
+        gap: 10%;
+
+        > a{
+            font-size: 20px;
+        }
+    }
+
     > a{
         text-decoration : none;
         font-family: ${props => props.theme.font.default};
@@ -41,6 +51,15 @@ export const Search = styled.div`
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
+    @media only screen and (max-width: 768px){
+        width: 100%;
+        justify-content: center;
+
+        > input{
+            width: 70%;
+        }
+    }
 
     >input{
         background: rgba(0, 0, 0, 0.01);
