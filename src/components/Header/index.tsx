@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
 
-import { Container } from './styles';
+import { Container, Buttons, Search} from './styles';
+import Logo from '../../assets/logo.svg'
 
 interface HeaderProps {
   children?: ReactNode;
@@ -9,8 +10,16 @@ interface HeaderProps {
 function Header({ children }: HeaderProps) {
   return (
     <Container>
-      <h1>Header</h1>
-      {children}
+      <Buttons>
+        <img src={Logo} alt="debian-logo"/>
+        <a href="/">Blog</a>
+        <a href="/">Micronews</a>
+        <a href="/">Planet</a>
+      </Buttons>
+      <Search>
+        <input type="text" name="" id=""/>
+        <button>Search</button>
+      </Search>
     </Container>
   );
 };
