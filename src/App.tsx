@@ -5,7 +5,8 @@ import theme from './styles/theme'
 import GlobalStyle from './styles/globalstyle'
 import Layout from './styles/layout';
 import Header from './components/Header';
-import OperationalSystem from './sections/OperationalSystem';
+import OperationalSystem from './content/OperationalSystem';
+import Title from './content/Title';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <GlobalStyle/>
       <Layout>
         <Header/>
-        
+        <Title/>
         <OperationalSystem/>
       </Layout>
     </ThemeProvider>

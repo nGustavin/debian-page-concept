@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import Title from '../../components/Titles';
+import Title from '../../components/SectionTitle';
 
 import { Container } from './styles';
 
